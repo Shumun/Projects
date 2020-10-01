@@ -1,0 +1,33 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  font-size: 30px;
+  text-align: center;
+  -ms-grid-rows: 1fr 50% 1fr;
+      grid-template-rows: 1fr 50% 1fr;
+}
+
+body .d1 {
+  background: red;
+}
+
+body .d2 {
+  background: yellow;
+}
+
+body .d3 {
+  background: pink;
+}
+
+body .d4 {
+  background: yellowgreen;
+}
+
+body .d5 {
+  background: grey;
+}
+
+body .d6 {
+  background: orange;
+}
+/*# sourceMappingURL=style.css.map */

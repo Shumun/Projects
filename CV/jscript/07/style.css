@@ -1,0 +1,28 @@
+body{
+    background: darkmagenta;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    border-radius: 2px solid black;
+    width: 550px;
+    height: 280px;
+    background: lightslategray;
+    margin-left: 400px;
+    color: black;
+}
+
+.card img{
+    margin: 5px 5px;
+}
+
+.top{
+    width: 100%;
+    height: 60%;
+    background: white;
+}
+
+

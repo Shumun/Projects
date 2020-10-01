@@ -1,0 +1,63 @@
+body{
+    background-color: cadetblue;
+    font-size: 35px;
+    direction: rtl;
+}
+
+.father{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.father .son{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.father .son .grand-son{
+  width: 35%;
+  height: 100px;
+  margin: 10px 0;
+  text-align: center;
+    
+}
+
+@media only screen and (min-width: 600px) { 
+    .saba{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .father {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        min-width: 40%;
+        flex: 1 1 0%;
+    }
+    
+    .father .son{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 5px 5px;
+      flex: 1 1 0%;
+ 
+    }
+    
+    .father .son .grand-son{
+      width: 100%;
+      height: 50px;
+      margin: 0px 0;
+      text-align: center;
+    
+    
+        
+    }
+}
+
+
+
+ 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="setTime()">
+
+    <h1 id="cpy">please Cpoy Text</h1><br>
+    <div id="color">click me for backgournd color is: </div>
+
+    <h1 id="time"></h1>
+    <button onclick="overTime()">Click</button>
+    <script>
+         
+         var counter=0;
+
+         function setTime(){
+             document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
+             counter++;
+         }
+         setInterval(setTime, 1000);
+
+         function overTime(){
+             alert("The time is pass: "+ counter);
+         }
+
+
+
+
+        /*
+        var x = document.getElementById("color");
+        x.addEventListener('click', function(){
+        this.style.background = "green";
+        console.log(this);
+        })
+
+        console.log(this);*/
+       
+        /*
+        var x = document.getElementById("cpy");
+        x.addEventListener('copy', function () {
+            document.getElementById("cpy").textContent = "element data has been copied";
+        })*/
+
+        /*
+        var kelet = document.getElementById("cpy");
+        kelet.addEventListener('copy', function(){
+        document.write("element data has been copied");
+        +=})*/
+
+
+
+    </script>
+</body>
+
+</html>
+
+<input type="text" id="kelet">

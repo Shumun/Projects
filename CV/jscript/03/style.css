@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+#todo{
+    margin: 40px;
+    width: 350px;
+    height: 428px;
+    background: white;
+    border: 3px solid black;
+    margin-left: 40%;
+} 
+
+h1{
+    margin: 0;
+    height: 50px;
+    background: yellowgreen;
+    text-align: center;
+    padding-top: 10px;
+
+}

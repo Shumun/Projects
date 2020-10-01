@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>MovieList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#" id="logo">רשימת הסרטים שלי
+        <header>
+            <div id="movieCheck"> </div>
+            <hr id="thread1">
+            <hr id="thread2">
+            <hr id="thread3" class="right">
+            <hr id="thread4">
+            <hr id="thread5" class="right">
+            <hr id="thread6">
+       
+        </header>
+    </a>
+
+    <script>
+        async function getData() {
+            try {
+                let response = await fetch('https://swapi.dev/api/films')
+                let movie = await response.json();
+                console.log(movie.results[2].title);
+
+                let div = "<div>"
+
+                console.log(movie.results);
+                movie.results.forEach(element => {
+                    div += `
+                
+                <ul>
+                <li>${element.title}</li>
+                </ul>
+               `
+                });
+
+                div += "</div>"
+                document.querySelector('div').innerHTML = div;
+            }
+            catch (err) {
+                alert(err);
+            }
+        }
+
+        getData();
+
+        let list = document.getElementById('movieCheck');
+        list.addEventListener('click', function (ev) {
+            if (ev.target.tagName == 'LI') {
+                ev.target.classList.toggle('checked');
+
+            }
+        });
+
+        function Movies() {
+            var movieLise = {
+                'titles': document.getElementById('movieCheck').style.checked
+                    = 'text-decoration: line-through' };
+            localStorage.setItem('name', JSON.stringify(movieLise));
+        }
+        Movies();
+    </script>
+</body>
+
+</html>

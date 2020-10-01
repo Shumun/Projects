@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; 
+    align-items: center;     
+    height: 600px;
+}
+
+button:hover {
+    background-color: lightgray;
+  }
+
+  #input1, #input2{
+      width: 80px;
+      height: 40px;
+      margin-left: 40px;
+  }
+  
+  .btn{
+      width: 80px;
+      height: 40px;
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <a href="index.html" id="logo">
+            <p id="mylogo">S</p>
+            <p id="mylogo2">SHIMON C</p>
+        </a>
+
+        <nav id="head">
+            <ul>
+                <a href="index.html">
+                    <li>About Me</li>
+                </a>
+                <a href="education.html">
+                    <li>Education</li>
+                </a>
+                <a href="jobexp.html">
+                    <li>Job Exprinace</li>
+                </a>
+                <a href="skills.html">
+                    <li>Skills</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Me</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <div id="form">
+            <h2 id="contact" onmousedown="mouseDown1()" onmouseup="mouseUp1()">Contact Me !
+
+            </h2>
+            <hr class="style-one" style="width: 80%;">
+            <input type="text" class="inpt" placeholder="Name" onfocusin="myFunc(this)">
+
+            <input type="text" class="inpt" placeholder="Organization" onfocusin="myFunc(this)">
+
+            <input type="email" class="inpt" placeholder="Email Address" onfocusin="myFunc(this)">
+
+            <input type="text" class="inpt" placeholder="Subject" onfocusin="myFunc(this)">
+
+            <textarea name="massage" id="text" cols="30" rows="1" placeholder="Enter Massage"></textarea>
+
+            <a href="#" id="linkbtn"> 
+            <button id="btn" onclick="myMassage();">SEND</button>
+        </a>
+            <p id="txt"></p>
+        </div>
+    </main>
+
+    <script>
+        function mouseDown1() {
+            document.getElementById("contact").style.color = "black";
+        }
+
+        function mouseUp1() {
+            document.getElementById("contact").style.color = "wheat";
+        }
+
+        // alert the input
+        function myFunc(x) {
+            x.style.background = "wheat";
+        }
+        // alert massage sent
+        function myMassage() {
+            document.getElementById("txt").innerText = "Thank you very much for the engagement.";
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

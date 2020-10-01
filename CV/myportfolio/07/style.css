@@ -1,0 +1,76 @@
+body {
+    background: burlywood;
+    direction: rtl;
+    text-align: center;
+}
+
+.pro {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: white;
+    width: 30%;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 10px 2px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.pro .pro1,img {
+    width: 80%;
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.colors {
+    padding: 20px 20px;
+}
+
+.red {
+    border: 2px solid black;
+    border-radius: 40px;
+    background: red;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+}
+
+
+.green {
+    border: 2px solid black;
+    border-radius: 40px;
+    background: green;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.blue {
+    border: 2px solid black;
+    border-radius: 40px;
+    background: blue;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+a span {
+  
+    background: brown;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}

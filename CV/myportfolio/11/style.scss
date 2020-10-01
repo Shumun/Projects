@@ -1,0 +1,31 @@
+body{ 
+
+    display: grid;
+    font-size: 30px;
+    text-align: center;
+    grid-template-rows: 1fr 50% 1fr;
+
+    .d1 {
+        background: red;
+    }
+
+    .d2 {
+        background: yellow;
+    }
+
+    .d3 {
+        background: pink;
+    }
+
+    .d4 {
+        background: yellowgreen;
+    }
+
+    .d5 {
+        background: grey;
+    }
+
+    .d6 {
+        background: orange;
+    }
+}
